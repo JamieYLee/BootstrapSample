@@ -2,6 +2,16 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  text-align: center;
+  margin: 20px auto;
+  color: #555;
+}
+
+.navbar, .navbar-inverse {
+  border-radius: 0px;
+}
+
 .center {
   display: block;
   margin: 20px auto;
@@ -9,25 +19,6 @@ body {
 
 .extra-margin {
   margin: 30px 0;
-}
-
-.pic_text {
-  padding-top: 50px;
-}
-
-figcaption {
-  text-align: center;
-}
-
-.card {
-  margin: 25px;
-  padding: 10px;
-  box-shadow: 0px 0px 5px 0px grey;
-}
-
-.card-subtitle {
-  font-style: italic;
-  padding-bottom: 15px;
 }
 
 .form-control {
@@ -40,6 +31,18 @@ figcaption {
 
 #signin {
   margin: 10px 0;
+  padding-left: 13px;
+}
+
+#submit {
+  width: 100%;
+  background-color: #f0c14b;
+  margin: 10px 0;
+  transition: color 0.2s ease;
+}
+
+#submit:hover{
+  color: #fff;
 }
 
 .a-icon {
@@ -47,9 +50,9 @@ figcaption {
   height: 10px;
   background-position: -364px -84px;
   position: absolute;
-  top: 50%;
+  top: 93%;
   margin-top: -4px;
-  left: 0;
+  left: 6px;
   background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
 }
 
@@ -139,4 +142,14 @@ footer {
   margin: 2px auto;
   text-align: center;
   padding: 0;
+}
+
+/*
+for devices under 600px
+*/
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: beige;
+  }
 }
